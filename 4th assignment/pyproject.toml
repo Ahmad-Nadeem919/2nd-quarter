@@ -1,0 +1,22 @@
+[project]
+name = "assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ahmad-Nadeem919", email = "an1469447@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "chainlit>=2.5.5",
+    "dotenv>=0.9.9",
+    "openai>=1.77.0",
+    "openai-agents>=0.0.14",
+]
+
+[project.scripts]
+assistant = "assistant:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
